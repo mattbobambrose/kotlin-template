@@ -1,4 +1,5 @@
 import io.kotest.core.spec.style.FunSpec
+import io.kotest.core.spec.style.StringSpec
 import io.kotest.matchers.shouldBe
 import io.kotest.matchers.shouldNotBe
 
@@ -13,5 +14,11 @@ class MainKtTest : FunSpec({
 
     test("Test test") {
         Test().isWorking() shouldBe true
+    }
+})
+
+class StringTest : StringSpec({
+    "strings.length should return size of string" {
+        "hello".length shouldBe 5
     }
 })

@@ -2,9 +2,9 @@ plugins {
     val kotlinVersion: String by System.getProperties()
     val versionsVersion: String by System.getProperties()
 
-    kotlin("jvm") version "1.9.0"
+    kotlin("jvm") version kotlinVersion
     application
-    id("com.github.ben-manes.versions") version "0.47.0"
+    id("com.github.ben-manes.versions") version versionsVersion
 }
 
 group = "org.example"
